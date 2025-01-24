@@ -11,18 +11,31 @@
 
 <body>
 
+  <!-- 색깔 -->
+
+  <style>
+    .rgb {
+      color: rgb(107, 107, 107);
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
+
   <div class="container">
     <div class="row">
       <div class="col">
 
         <!-- 헤드 -->
 
-        <table class="table width 100%">
+        <table width="100%">
           <thead class="table-secondary">
             <tr>
               <th>
-                <h3><b>기본정보</b></h3>
+                <h1><b>Admin</b></h1>
               </th>
+              <th></th>
               <th></th>
               <th></th>
               <th></th>
@@ -30,85 +43,122 @@
           </thead>
           <tbody>
 
+            <!-- 기본정보 -->
+            
+            <tr>
+              <td>아직 공사중</td>
+              <div class="mb-3">
+                <th>
+                  <h3><b>기본정보</b></h3>
+                </th>
+              </div>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
             <!-- 코드 그룹 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">코드그룹</b>
-                <b style="color: red;">*</b>
+                <b class="rgb">코드그룹</b>
+                <b class="red">*</b>
               </td>
             </tr>
             <tr>
-              <td class="form-floating">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>선택하세요</option>
-                  <option value="">1</option>
-                </select>
+              <td></td>
+              <td>
+                <div class="mb-3">
+                  <select id="inputState" class="form-select">
+                    <option selected>선택하세요</option>
+                    <option>...</option>
+                  </select>
+                </div>
               </td>
             </tr>
 
             <!-- 코드 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">코드</b>
-                <b style="color: red;">*</b>
+                <b class="rgb">코드</b>
+                <b class="red">*</b>
               </td>
-              <td><b style="color: rgb(107, 107, 107);">코드 (ANOTHER)</b></td>
+              <td><b class="rgb">코드 (ANOTHER)</b></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">코드 이름</b>
-                <b style="color: red;">*</b>
+                <b class="rgb">코드 이름</b>
+                <b class="red">*</b>
               </td>
-              <td><b style="color: rgb(107, 107, 107);">코드 이름 (영문)</b></td>
+              <td><b class="rgb">코드 이름 (영문)</b></td>
             </tr>
             <tr>
+              <td></td>
               <td>
-                <input class="form-control" type="text" placeholder="자동생성" aria-label="Disabled input example" disabled>
+                <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="자동생성" aria-label="Disabled input example"
+                    disabled>
               </td>
               <td>
-                <input class="form-control" type="text" placeholder="영문소문자, 숫자">
+                <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="영문소문자, 숫자">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text" placeholder="한글, 영대소문자, 숫자">
+                <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="한글, 영대소문자, 숫자">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text" placeholder="영대소문자, 숫자">
+                <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="영대소문자, 숫자">
+                </div>
               </td>
             </tr>
 
             <!-- 사용여부 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">사용여부</b>
-                <b style="color: red;">*</b>
+                <b class="rgb">사용여부</b>
+                <b class="red">*</b>
               </td>
               <td>
-                <b style="color: rgb(107, 107, 107);">순서</b>
-                <b style="color: red;">*</b>
+                <b class="rgb">순서</b>
+                <b class="red">*</b>
               </td>
             </tr>
             <tr>
-              <td class="form-floating">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>선택하세요</option>
-                  <option value="">1</option>
-                </select>
+              <td></td>
+              <td>
+                <div class="mb-3">
+                  <select id="inputState" class="form-select">
+                    <option>사용</option>
+                    <option>사용안함</option>
+                  </select>
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
             </tr>
 
             <!-- 설명 -->
 
             <tr>
-              <td><b style="color: rgb(107, 107, 107);">설명</b></td>
+              <td></td>
+              <td><b class="rgb">설명</b></td>
             </tr>
             <tr>
+              <td></td>
               <td class="form-floating" colspan="2">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                  style="height: 100px"></textarea>
+                <div class="mb-3">
+                  <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
               </td>
               <td>
               </td>
@@ -117,105 +167,137 @@
             <!-- 다국어1 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">다국어1</b>
+                <b class="rgb">다국어1</b>
               </td>
               <td>
-                <b style="color: rgb(107, 107, 107);">다국어2</b>
+                <b class="rgb">다국어2</b>
               </td>
-              <td><b style="color: rgb(107, 107, 107);">다국어3</b></td>
+              <td><b class="rgb">다국어3</b></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">다국어4</b>
+                <b class="rgb">다국어4</b>
               </td>
             </tr>
             <tr>
+              <td></td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
             </tr>
 
             <!-- 다국어2 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">다국어5</b>
+                <b class="rgb">다국어5</b>
               </td>
               <td>
-                <b style="color: rgb(107, 107, 107);">다국어6</b>
+                <b class="rgb">다국어6</b>
               </td>
-              <td><b style="color: rgb(107, 107, 107);">다국어7</b></td>
+              <td><b class="rgb">다국어7</b></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">다국어8</b>
+                <b class="rgb">다국어8</b>
               </td>
             </tr>
             <tr>
+              <td></td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
             </tr>
 
             <!-- 예비1 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">예비1 (VARCHAR TYPE)</b>
+                <b class="rgb">예비1 (VARCHAR TYPE)</b>
               </td>
               <td>
-                <b style="color: rgb(107, 107, 107);">예비2 (VARCHAR TYPE)</b>
+                <b class="rgb">예비2 (VARCHAR TYPE)</b>
               </td>
-              <td><b style="color: rgb(107, 107, 107);">예비3 (VARCHAR TYPE)</b></td>
+              <td><b class="rgb">예비3 (VARCHAR TYPE)</b></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">예비4 (VARCHAR TYPE)</b>
+                <b class="rgb">예비4 (VARCHAR TYPE)</b>
               </td>
             </tr>
             <tr>
+              <td></td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
               <td>
-                <input class="form-control" type="text">
+                <div class="mb-3">
+                  <input class="form-control" type="text">
+                </div>
               </td>
             </tr>
 
             <!-- 예비2 -->
 
             <tr>
+              <td></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">예비1 (INT TYPE)</b>
+                <b class="rgb">예비1 (INT TYPE)</b>
               </td>
               <td>
-                <b style="color: rgb(107, 107, 107);">예비2 (INT TYPE)</b>
+                <b class="rgb">예비2 (INT TYPE)</b>
               </td>
-              <td><b style="color: rgb(107, 107, 107);">예비3 (INT TYPE)</b></td>
+              <td><b class="rgb">예비3 (INT TYPE)</b></td>
               <td>
-                <b style="color: rgb(107, 107, 107);">예비4 (INT TYPE)</b>
+                <b class="rgb">예비4 (INT TYPE)</b>
               </td>
             </tr>
             <tr>
+              <td></td>
               <td>
                 <input class="form-control" type="text">
               </td>
@@ -229,11 +311,8 @@
                 <input class="form-control" type="text">
               </td>
             </tr>
-
           </tbody>
-
         </table>
-
       </div>
     </div>
   </div>

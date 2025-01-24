@@ -12,68 +12,79 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="col">
 
-                <!-- <div class="container text-center"> -->
-                <form>
+        <!-- <div class="container text-center"> -->
+        <form>
 
-                    <!-- Sign In 글자 -->
+            <!-- Sign In 글자 -->
 
-                    <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="row">
+                    <div class="col">
                         <div class="text-center">
                             <h1><b>Sign In</b></h1>
                             <div style="color: rgb(130, 130, 130);">
                                 Get access to your account
                             </div>
                         </div>
-                        <br><br>
+                    </div>
+                </div>
+                <br><br>
 
-                        <!-- 구글 페이스북 버튼 -->
+                <!-- 구글 페이스북 버튼 -->
 
+                <div class="row">
+                    <div class="col">
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b
                                     style="color: rgb(56, 56, 56);">Sign in
                                     with google</b></button>
                         </div>
-                        <br>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b
-                                    style="color: rgb(56, 56, 56);">Sign in
-                                    with facebook</b></button>
-                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b
+                            style="color: rgb(56, 56, 56);">Sign in
+                            with facebook</b></button>
+                </div>
 
-                        <!-- 글자 양옆에 선 -->
+                <!-- 글자 양옆에 선 -->
 
-                        <br>
+                <br>
+                <div class="row">
+                    <div class="col">
                         <div class="hr-sect"><b>or use email</b></div>
+                    </div>
+                </div>
 
-                        <!-- class="hr-sect" CSS -->
+                <!-- class="hr-sect" CSS -->
 
-                        <style>
-                            .hr-sect {
-                                display: flex;
-                                flex-basis: 100%;
-                                align-items: center;
-                                color: rgba(0, 0, 0, 0.35);
-                                font-size: 15px;
-                                margin: 15px 0px;
-                            }
+                <style>
+                    .hr-sect {
+                        display: flex;
+                        flex-basis: 100%;
+                        align-items: center;
+                        color: rgba(0, 0, 0, 0.35);
+                        font-size: 15px;
+                        margin: 15px 0px;
+                    }
 
-                            .hr-sect::before,
-                            .hr-sect::after {
-                                content: "";
-                                flex-grow: 1;
-                                background: rgba(0, 0, 0, 0.35);
-                                height: 1px;
-                                font-size: 0px;
-                                line-height: 0px;
-                                margin: 0px 16px;
-                            }
-                        </style>
+                    .hr-sect::before,
+                    .hr-sect::after {
+                        content: "";
+                        flex-grow: 1;
+                        background: rgba(0, 0, 0, 0.35);
+                        height: 1px;
+                        font-size: 0px;
+                        line-height: 0px;
+                        margin: 0px 16px;
+                    }
+                </style>
 
-                        <!-- id password 입력창 -->
-
+                <!-- id password 입력창 -->
+                <div class="row">
+                    <div class="col">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">&nbsp;&nbsp;<b
                                     style="color: rgb(120, 120, 120);">ID</b></label>
@@ -82,6 +93,10 @@
                                     aria-describedby="emailHelp" placeholder="name@example.cpm">
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">&nbsp;&nbsp;<b
                                     style="color: rgb(120, 120, 120);">Password</b></label>
@@ -90,22 +105,31 @@
                                     placeholder="Password">
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Remember me 버튼과  Forgot Password? 링크-->
+                <!-- Remember me 버튼과  Forgot Password? 링크-->
 
+                <div class="row">
+                    <div class="col">
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1 mx-auto p-2" style="width: 330px"><b
-                                    style="color: rgb(120, 120, 120);">Remember me</b></label>
+                                    style="color: rgb(120, 120, 120);">Remember
+                                    me</b></label>
                             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                                 href="#">
                                 <b>Forgot Password?</b>
                             </a>
                         </div>
-                        <br>
+                    </div>
+                </div>
+                <br>
 
-                        <!-- 로그인 버튼과 회원가입 링크 -->
+                <!-- 로그인 버튼과 회원가입 링크 -->
 
+                <div class="row">
+                    <div class="col">
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary mx-auto p-2" style="width: 480px;"><b>Sign
                                     In</b></button><br><br>
@@ -115,10 +139,9 @@
                             </a>
                         </div>
                     </div>
-                </form>
-
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
