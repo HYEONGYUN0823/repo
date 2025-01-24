@@ -12,6 +12,9 @@
 <body>
     <!-- <div class="container text-center"> -->
     <form>
+
+        <!-- 구글 페이스북 버튼 -->
+
         <div class="position-absolute top-50 start-50 translate-middle">
             <div class="text-center">
                 <h1><b>Sign In</b></h1>
@@ -21,15 +24,47 @@
             </div>
             <br><br>
             <div class="text-center">
-                <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b>Sign in with google</b></button>
+                <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b>Sign in
+                        with google</b></button>
             </div>
             <br>
             <div class="text-center">
-                <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b>Sign in with facebook</b></button>
+                <button type="button" class="btn btn-outline-secondary mx-auto p-2" style="width: 500px;"><b>Sign in
+                        with facebook</b></button>
             </div>
+
+            <!-- 글자 양옆에 선 -->
+
             <br>
             <div class="hr-sect"><b>or use email</b></div>
             <br>
+
+            <!-- class="hr-sect" CSS -->
+
+            <style>
+                .hr-sect {
+                    display: flex;
+                    flex-basis: 100%;
+                    align-items: center;
+                    color: rgba(0, 0, 0, 0.35);
+                    font-size: 15px;
+                    margin: 8px 0px;
+                }
+
+                .hr-sect::before,
+                .hr-sect::after {
+                    content: "";
+                    flex-grow: 1;
+                    background: rgba(0, 0, 0, 0.35);
+                    height: 1px;
+                    font-size: 0px;
+                    line-height: 0px;
+                    margin: 0px 16px;
+                }
+            </style>
+
+            <!-- id password 입력창 -->
+
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">&nbsp;&nbsp;<b>ID</b></label>
                 <div class="mx-auto p-2" style="width: 500px;">
@@ -43,6 +78,9 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
             </div>
+
+            <!-- Remember me 버튼과  Forgot Password? 링크-->
+
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1 mx-auto p-2" style="width: 330px">Remember me</label>
@@ -52,6 +90,9 @@
                 </a>
             </div>
             <br>
+
+            <!-- 로그인 버튼과 회원가입 링크 -->
+
             <div class="text-center">
                 <button type="submit" class="btn btn-primary mx-auto p-2" style="width: 480px;"><b>Sign
                         In</b></button><br><br>
