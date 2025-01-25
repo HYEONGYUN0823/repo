@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -30,21 +30,37 @@
                 </p>
             </div>
             <div class="row">
-                <h3><b>기본정보</b></h3>
+                <div class="col-3"></div>
+                <div class="col">
+                    <h3><b>기본정보</b></h3>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <b class="gray">코드그룹</b>
-            <b class="red">*</b>
-        </div>
-        <div class="col-3 mb-3">
-            <select id="inputState" class="form-select">
-                <option selected>선택하세요</option>
-                <option>...</option>
-            </select>
+
+        <!-- 코드그룹 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <b class="gray">코드그룹</b>
+                <b class="red">*</b>
+            </div>
         </div>
         <div class="row">
-            <div class="col-3 gray">
+            <div class="col-3"></div>
+            <div class="col-2 mb-3">
+                <select id="inputState" class="form-select">
+                    <option selected>선택하세요</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 코드 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col gray">
                 <b>코드</b>
                 <b class="red"> *</b>
             </div>
@@ -59,19 +75,231 @@
                 <b>코드 이름 (영문)</b>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-3"></div>
+                <div class="col">
                     <input class="form-control" type="text" placeholder="자동생성" aria-label="Disabled input example"
                         disabled>
                 </div>
-                <div class="mb-3 col-3">
+                <div class="mb-3 col">
                     <input class="form-control" type="text" placeholder="영문소문자, 숫자">
                 </div>
-                <div class="mb-3 col-3">
+                <div class="mb-3 col">
                     <input class="form-control" type="text" placeholder="한글, 영대소문자, 숫자">
                 </div>
-                <div class="mb-3 col-3">
+                <div class="mb-3 col">
                     <input class="form-control" type="text" placeholder="영대소문자, 숫자">
-                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 사용여부 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2 gray">
+                <b>사용여부</b>
+                <b class="red">*</b>
+            </div>
+            <div class="col gray">
+                <b>순서</b>
+                <b class="red">*</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2">
+                <div class="mb-3">
+                    <select id="inputState" class="form-select">
+                        <option>사용</option>
+                        <option>사용안함</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- 설명 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col gray">
+                <b>설명</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- 다국어1 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col gray">
+                <b>다국어1</b>
+            </div>
+            <div class="col gray">
+                <b>다국어2</b>
+            </div>
+            <div class="col gray">
+                <b>다국어3</b>
+            </div>
+            <div class="col gray">
+                <b>다국어4</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- 다국어2 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col gray">
+                <b>다국어5</b>
+            </div>
+            <div class="col gray">
+                <b>다국어6</b>
+            </div>
+            <div class="col gray">
+                <b>다국어7</b>
+            </div>
+            <div class="col gray">
+                <b>다국어8</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- 예비1 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col gray">
+                <b>예비1 (VARCHAR TYPE)</b>
+            </div>
+            <div class="col gray">
+                <b>예비2 (VARCHAR TYPE)</b>
+            </div>
+            <div class="col gray">
+                <b>예비3 (VARCHAR TYPE)</b>
+            </div>
+            <div class="col gray">
+                <b>예비4 (VARCHAR TYPE)</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- 예비2 -->
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col gray">
+                <b>예비1 (INT TYPE)</b>
+            </div>
+            <div class="col gray">
+                <b>예비2 (INT TYPE)</b>
+            </div>
+            <div class="col gray">
+                <b>예비3 (INT TYPE)</b>
+            </div>
+            <div class="col gray">
+                <b>예비4 (INT TYPE)</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <input class="form-control" type="text">
+                </div>
             </div>
         </div>
     </div>
