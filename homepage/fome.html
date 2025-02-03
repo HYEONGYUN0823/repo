@@ -4,416 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>fome</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- 색 -->
+
+    <style>
+        .rgb {
+            color: rgb(107, 107, 107);
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+
 </head>
 
-<!-- 색깔 -->
-
-<style>
-    .gray {
-        color: rgb(107, 107, 107);
-    }
-
-    .red {
-        color: red;
-    }
-</style>
-
 <body>
-    <div clss="container">
+
+    <!-- 홈페이시 시작 -->
+
+    <div class="container">
         <div class="row">
-            <div class="col">
-                <p>
-                <h1><strong class="gray">Admin</strong></h1>
-                </p>
+            <div>
+                <h1><Strong class="rgb">Admin</Strong></h1>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <button type="button" class="btn btn-outline-dark">Home</button>
-                </div>
-                <div class="col">
-                    <h3><b>기본정보</b></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button type="button" class="btn btn-outline-dark">공지사항</button>
-                </div>
-            </div>
+            <hr>
         </div>
-
-        <!-- 코드그룹 -->
-
         <div class="row">
-            <div class="col-3">
-                <div class="accordion" id="회원관리">
+            <div class="col-2">
+                <button type="button" class="btn"><b class="rgb">Home</b></button><br>
+                <button type="button" class="btn"><b class="rgb">공지사항</b></button><br>
+                <button type="button" class="btn"><b class="rgb">회원관리</b></button><br>
+                <button type="button" class="btn"><b class="rgb">서비스관리</b></button><br>
+                <button type="button" class="btn"><b class="rgb">커뮤니케이션</b></button><br>
+                <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                회원관리
+                                <b class="rgb">시스템관리</b>
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <button type="button" class="btn btn-outline-dark">이히히</button>
+                                <button type="button" class="btn"><b class="rgb">코드관리</b></button><br>
+                                <button type="button" class="btn"><b class="rgb">코드그룹관리</b></button>
                             </div>
                         </div>
                     </div>
+                    <button type="button" class="btn"><b class="rgb">개인정보 관리</b></button><br>
+                    <button type="button" class="btn"><b class="rgb">test</b></button>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex" style="height: 700px;">
+                    <div class="vr"></div>
                 </div>
             </div>
             <div class="col-9">
                 <div class="row">
-                    <div class="col-3">
-                        <b class="gray">코드그룹</b>
-                        <b class="red">*</b>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <select id="inputState" class="form-select">
-                                    <option selected>선택하세요</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div>
+                        <h3><b>기본정보</b></h3>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- 코드 -->
-
-        <div class="row">
-            <div class="col-3">
-                <div class="accordion" id="서비스관리">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                서비스관리
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <button type="button" class="btn btn-outline-dark">이히히</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9">
                 <div class="row">
-                    <div class="col gray">
-                        <b>코드</b>
-                        <b class="red"> *</b>
-                    </div>
-                    <div class="col gray">
-                        <b>코드 (ANOTHER)</b>
-                    </div>
-                    <div class="col gray">
-                        <b>코드 이름</b>
-                        <b class="red">*</b>
-                    </div>
-                    <div class="col gray">
-                        <b>코드 이름 (영문)</b>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <input class="form-control" type="text" placeholder="자동생성"
-                                aria-label="Disabled input example" disabled>
-                        </div>
-                        <div class="mb-3 col">
-                            <input class="form-control" type="text" placeholder="영문소문자, 숫자">
-                        </div>
-                        <div class="mb-3 col">
-                            <input class="form-control" type="text" placeholder="한글, 영대소문자, 숫자">
-                        </div>
-                        <div class="mb-3 col">
-                            <input class="form-control" type="text" placeholder="영대소문자, 숫자">
-                        </div>
-                    </div>
+                    <hr>
                 </div>
-            </div>
-        </div>
-
-        <!-- 사용여부 -->
-
-        <div class="row">
-            <div class="col-3">
-                <div class="accordion" id="커뮤니케이션">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                커뮤니케이션
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <button type="button" class="btn btn-outline-dark">이히히</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9">
                 <div class="row">
-                    <div class="col-3 gray">
-                        <b>사용여부</b>
-                        <b class="red">*</b>
+                    <div class="col">
+                        <div>
+                            <b class="rgb">코드그룹</b><b class="red"> *</b>
+                        </div>
                     </div>
-                    <div class="col gray">
-                        <b>순서</b>
-                        <b class="red">*</b>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <select id="inputState" class="form-select">
+                            <option selected>선택하세요</option>
+                            <option>...</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <div class="mb-3">
-                            <select id="inputState" class="form-select">
-                                <option>사용</option>
-                                <option>사용안함</option>
-                            </select>
-                        </div>
+                        <div><b class="rgb">코드</b><b class="red"> *</b></div>
                     </div>
                     <div class="col-3">
-                        <div class="mb-3">
-                            <input class="form-control" type="text">
-                        </div>
+                        <label for="code01"><b class="rgb">코드 (ANOTHER)</b></label>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 설명 -->
-
-        <div class="row">
-            <div class="col-3">
-                <div class="accordion" id="시스템관리">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                시스템관리
-                            </button>
-                        </h2>
-                        <div id="collapsefour" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <button type="button" class="btn btn-outline-dark">코드관리</button><br>
-                                <button type="button" class="btn btn-outline-dark">코드그룹관리</button>
-                            </div>
-                        </div>
+                    <div class="col-3">
+                        <label for="code02"><b class="rgb">코드 이름</b><b class="red"> *</b></label>
                     </div>
-                </div>
-                <button type="button" class="btn btn-outline-dark">코드관리</button>
-                <div class="accordion" id="test">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                test
-                            </button>
-                        </h2>
-                        <div id="collapsefive" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <button type="button" class="btn btn-outline-dark">힝</button>
-                            </div>
-                        </div>
+                    <div class="col-3">
+                        <label for="code03"><b class="rgb">코드 이름(영문)</b></label>
                     </div>
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="col gray">
-                    <b>설명</b>
                 </div>
                 <div class="row">
-                    <div class="col-5">
-                        <div class="mb-3">
-                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
-                        </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" type="text" placeholder="자동생성" aria-label="Disabled input example"
+                            disabled>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="code01" type="text" placeholder="영문소문자, 숫자">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="code02" type="text" placeholder="한글, 영대소문자, 숫자">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="code03" type="text" placeholder="영대소문자, 숫자">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <b class="rgb">사용여부</b><b class="red"> *</b>
+                    </div>
+                    <div class="col-3">
+                        <label for="use"><b class="rgb">순서</b><b class="red"> *</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <select id="inputState" class="form-select">
+                            <option>사용</option>
+                            <option>사용안함</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" id="use" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="description"><b class="rgb">설명</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <textarea class="form-control" id="description" id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="다국어1"><b class="rgb">다국어1</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="다국어2"><b class="rgb">다국어2</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="다국어3"><b class="rgb">다국어3</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="다국어4"><b class="rgb">다국어4</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어1" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어2" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어3" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어4" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="다국어5"><b class="rgb">다국어5</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="다국어6"><b class="rgb">다국어6</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="다국어7"><b class="rgb">다국어7</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="다국어8"><b class="rgb">다국어8</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어5" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어6" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어7" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="다국어8" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="예비1"><b class="rgb">예비1 (VARCHAR TYPE)</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="예비2"><b class="rgb">예비2 (VARCHAR TYPE)</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="예비3"><b class="rgb">예비3 (VARCHAR TYPE)</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="예비4"><b class="rgb">예비4 (VARCHAR TYPE)</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비1" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비2" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비3" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비4" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="예비5"><b class="rgb">예비1 (INT TYPE)</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="예비6"><b class="rgb">예비2 (INT TYPE)</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="예비7"><b class="rgb">예비3 (INT TYPE)</b></label>
+                    </div>
+                    <div class="col-3">
+                        <label for="예비8"><b class="rgb">예비4 (INT TYPE)</b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비5" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비6" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비7" type="text">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <input class="form-control" id="예비8" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <button type="button" class="btn btn-outline-secondary btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5m-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z" />
+                                <path
+                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-10"></div>
+                    <div class="col-1">
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-database-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223" />
+                                <path
+                                    d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                                <path
+                                    d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                                <path
+                                    d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- 다국어1 -->
 
-        <div class="row">
-            <div class="col-3">
-
-            </div>
-            <div class="col gray">
-                <b>다국어1</b>
-            </div>
-            <div class="col gray">
-                <b>다국어2</b>
-            </div>
-            <div class="col gray">
-                <b>다국어3</b>
-            </div>
-            <div class="col gray">
-                <b>다국어4</b>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-        </div>
-
-        <!-- 다국어2 -->
-
-        <div class="row">
-            <div class="col-3">
-
-            </div>
-            <div class="col gray">
-                <b>다국어5</b>
-            </div>
-            <div class="col gray">
-                <b>다국어6</b>
-            </div>
-            <div class="col gray">
-                <b>다국어7</b>
-            </div>
-            <div class="col gray">
-                <b>다국어8</b>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-        </div>
-
-        <!-- 예비1 -->
-
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col gray">
-                <b>예비1 (VARCHAR TYPE)</b>
-            </div>
-            <div class="col gray">
-                <b>예비2 (VARCHAR TYPE)</b>
-            </div>
-            <div class="col gray">
-                <b>예비3 (VARCHAR TYPE)</b>
-            </div>
-            <div class="col gray">
-                <b>예비4 (VARCHAR TYPE)</b>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-        </div>
-
-        <!-- 예비2 -->
-
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col gray">
-                <b>예비1 (INT TYPE)</b>
-            </div>
-            <div class="col gray">
-                <b>예비2 (INT TYPE)</b>
-            </div>
-            <div class="col gray">
-                <b>예비3 (INT TYPE)</b>
-            </div>
-            <div class="col gray">
-                <b>예비4 (INT TYPE)</b>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input class="form-control" type="text">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
